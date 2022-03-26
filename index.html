@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Colloquium zur BLL</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
@@ -14,8 +14,8 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Colloquium zur BLL</h1>
+        <p>Charlotte Specht</p>
     </header>
 
     <section class="slide" id="cover">
@@ -23,14 +23,18 @@
         <h2>Colloquium zur BLL</h2>
         <p>Charlotte Specht</p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="pictures/title.jpg" style="object-fit: cover; width: 100%;">
             <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
+                Photo by <strong><a href="https://pxhere.com/de/photographer/795663?utm_content=clipUser&utm_medium=referral&utm_source=pxhere">rawpixel.com</a></strong> from <strong><a href="https://pxhere.com/de/photo/1454709?utm_content=clipUser&utm_medium=referral&utm_source=pxhere">PxHere</a></strong>
             </figcaption>
         </figure>
         <style>
+            #cover::after {
+                display: none;
+
+            }
             #cover h2 {
-                margin: 30px 0 0;
+                margin: 140px 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
@@ -51,20 +55,91 @@
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li class="next">Works in all modern browsers</li>
-            <li class="next">Themes are separated from engine</li>
-            <li class="next">Fully keyboard accessible</li>
-            <li class="next">Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+        <h2>Aufbau</h2>
+        <div class="columns two">
+            <ul>
+                <li>Inhaltliche Zusammenfassung</li>
+                <li>Schwerpunktsetzung</li>
+                <li>Inhaltlich-methodische Entscheidungen</li>
+                <li>Arbeitsweise</li>
+            </ul>
+            <ul>
+                <li>Offene Fragen</li>
+                <li>Probleme</li>
+                <li>Was war gut? Was war schlecht?</li>
+                <li>Eigener Lernzuwachs</li>
+                <li>Fazit</li>
+            </ul>
+        </div>
     </section>
 
     <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Inhaltliche Zusammenfassung</h2>
+        <ul>
+            <li>Pythagoras von Samos</li>
+            <li>Beweise für den Satz des Pythagoras</li>
+            <li>Pierre de Fermat</li>
+            <figure>
+                <img class src="pictures/buch.png" style="object-fit: cover; width: 22%; position: absolute; left: 65%; top: 25%;">
+                <figcaption class="copyright right white">
+                </figcaption>
+            </figure>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Schwerpunktsetzung</h2>
+        <ul>
+            <li>Alternativen</li>
+            <li>Bewertung</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Inhaltlich-methodische Entscheidungen</h2>
+        <ul>
+            <li>Was nächstes Mal anders machen?</li>
+            <li>Beschreibung des Arbeitsweges und Ergebnisse</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Arbeitsweise</h2>
+        <ul>
+            <li>LaTeX</li>
+            <li>Abbildungen</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Offene Fragen</h2>
+        <ul>
+            <li>Erläuterung</li>
+            <li>Warum noch nciht beantwortet?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Probleme</h2>
+        <ul>
+            <li>Fehler Winkel</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Was war gut? Was war schlecht?</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Eigener Lernzuwachs</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Fazit</h2>
+        <ul>
+            <li>Was würde ich das nächste Mal anders machen?</li>
+            <li>Hat die BLL meine Berufswahl beeinflusst?</li>
+        </ul>
     </section>
 
     <section class="slide">
@@ -73,32 +148,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
         </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
     </section>
 
     <section class="slide">
@@ -115,87 +164,10 @@
     </section>
 
     <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+        <h2>Quellen</h2>
+        <ul>
+            <li>https://pxhere.com/de/photo/1454709</li>
+        </ul>
     </section>
 
     <footer class="badge">
