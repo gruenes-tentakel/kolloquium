@@ -60,14 +60,18 @@
             <ul>
                 <li>Inhaltliche Zusammenfassung</li>
                 <li>Schwerpunktsetzung</li>
-                <li>Inhaltlich-methodische Entscheidungen</li>
-                <li>Arbeitsweise</li>
+                <li>Arbeitsprozess</li>
+                <li>Arbeitsweise ( &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 und Abbildungen)</li>
+                <figure>
+                    <img class src="pictures/LaTeX.svg" style="object-fit: cover; width: 6.5%; position: absolute; left: 25%; top: 58%;">
+                    <figcaption class="copyright right white">
+                    </figcaption>
+                </figure>
             </ul>
             <ul>
-                <li>Offene Fragen</li>
                 <li>Probleme</li>
                 <li>Was war gut? Was war schlecht?</li>
-                <li>Eigener Lernzuwachs</li>
+                <li>Was habe ich gelernt?</li>
                 <li>Fazit</li>
             </ul>
         </div>
@@ -77,8 +81,9 @@
         <h2>Inhaltliche Zusammenfassung</h2>
         <ul>
             <li>Pythagoras von Samos</li>
+            <li>Was ist ein Beweis?</li>
             <li>Beweise für den Satz des Pythagoras</li>
-            <li>Pierre de Fermat</li>
+            <li>Pierre de Fermat und sein Satz</li>
             <figure>
                 <img class src="pictures/buch.png" style="object-fit: cover; width: 22%; position: absolute; left: 65%; top: 25%;">
                 <figcaption class="copyright right white">
@@ -89,84 +94,149 @@
 
     <section class="slide">
         <h2>Schwerpunktsetzung</h2>
+        <figure>
+            <img class src="pictures/Ideen.png" style="object-fit: cover; width: 65%; position: absolute; left: 15.5%; top: 30%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Arbeitsprozess</h2> 
+        <figure>
+            <img class src="pictures/Timeline.png" style="object-fit: cover; width: 80%; position: absolute; left: 8%; top: 30%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2></h2>
+        <figure>
+            <img class src="pictures/LaTeX.svg" style="object-fit: cover; width: 15%; position: absolute; left: 10%; top: 13%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
         <ul>
-            <li>Alternativen</li>
-            <li>Bewertung</li>
+        <figure>
+            <img class src="pictures/LaTeX.png" style="object-fit: cover; width: 70%; position: absolute; left: 10%; top: 25%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+        <figure>
+            <img class src="pictures/PDF.png" style="object-fit: cover; width: 15%; position: absolute; right: 5%; top: 70%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Inhaltlich-methodische Entscheidungen</h2>
-        <ul>
-            <li>Was nächstes Mal anders machen?</li>
-            <li>Beschreibung des Arbeitsweges und Ergebnisse</li>
-        </ul>
+        <h2></h2>
+        <figure>
+            <img class src="pictures/LaTeX.svg" style="object-fit: cover; width: 15%; position: absolute; left: 10%; top: 13%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+        <br>
+        <pre>
+            <style>
+                .slide pre code:not(:only-child)::before {
+                    display: none;
+                }
+            </style>
+            <code> \begin{align*}</code>
+            <code> \vec{c}^{\:2}&=(\vec{a}-\vec{b})^2,\\</code>
+            <code> &=\vec{a}^{\:2}-2\mkm\vec{a}\cdot\vec{b}+\vec{b}^{\:2},\\</code>
+            <code> \vec{c}\mkm|^2&=|\vec{a}|^2+|\vec{b}|^2\quad</code>
+            <code> \text{(wegen$\vec{a}\cdot\vec{b}=0$)}.</code>
+            <code> \end{align*}</code>
+
+        </pre>
     </section>
 
     <section class="slide">
-        <h2>Arbeitsweise</h2>
-        <ul>
-            <li>LaTeX</li>
-            <li>Abbildungen</li>
-        </ul>
+        <h2></h2>
+        <figure>
+            <img class src="pictures/LaTeX.svg" style="object-fit: cover; width: 15%; position: absolute; left: 10%; top: 13%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+        <pre>
+            <ul>
+                <figure>
+                    <img class src="pictures/Vektoren.png" style="object-fit: cover; width: 70%; position: absolute; left: 7%; top: 25%;">
+                    <figcaption class="copyright right white">
+                    </figcaption>
+                </figure>
+            </ul>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2>Offene Fragen</h2>
-        <ul>
-            <li>Erläuterung</li>
-            <li>Warum noch nciht beantwortet?</li>
-        </ul>
+        <h2>Abbildungen</h2>
+        <pre>
+            <style>
+                .slide pre code:not(:only-child)::before {
+                    display: none;
+                }
+            </style>
+            <div style="font-size: 75%;">
+                <code>Point2 A(100.0, 100.0);</code>
+                <code>Point2 C(Circle2(Segment2(A, B).point(0.5), 0.5*A.dist(B)).periphery(115.0));</code>
+                <code>Segment2(C, B).plot(p, Color(string("Sky Blue1")));</code>
+                <code>Triangle2(A, B, C).plot(p);</code>
+                <code>p.string(A.x()- 8.0, A.y()- 8.0, "A");</code>
+            </div>
+        </pre>
+        <figure>
+            <img class src="pictures/charly-pyth7.jpg" style="object-fit: cover; width: 25%; position: absolute; left: 65%; top: 45%;">
+        </figure>
     </section>
 
     <section class="slide">
         <h2>Probleme</h2>
+            <figure>
+                <img class src="pictures/Uhr.png" style="object-fit: cover; width: 30%; position: absolute; left: 7%; top: 25%;">
+            </figure>
+            <figure class="next">
+                <img class src="pictures/Lupe.png" style="object-fit: cover; width: 30%; position: absolute; left: 50%; top: 25%;">
+            </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Was habe ich gelernt?</h2>
         <ul>
-            <li>Fehler Winkel</li>
+            <li>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160und Abbildungen</li>
+            <li>weniger inhaltlich</li>
+            <li>methodisch</li>
         </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Was war gut? Was war schlecht?</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Eigener Lernzuwachs</h2>
+        <figure>
+            <img class src="pictures/LaTeX.svg" style="object-fit: cover; width: 6.5%; position: absolute; left: 10%; top: 32%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
+        <figure>
+            <img class src="pictures/Glühbirne.png" style="object-fit: cover; width: 30%; position: absolute; left: 60%; top: 25%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
     </section>
 
     <section class="slide">
         <h2>Fazit</h2>
-        <ul>
-            <li>Was würde ich das nächste Mal anders machen?</li>
-            <li>Hat die BLL meine Berufswahl beeinflusst?</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+        <figure>
+            <img class src="pictures/Fazit.png" style="object-fit: cover; width: 75%; position: absolute; left: 10%; top: 25%;">
+            <figcaption class="copyright right white">
+            </figcaption>
+        </figure>
     </section>
 
     <section class="slide">
         <h2>Quellen</h2>
         <ul>
             <li>https://pxhere.com/de/photo/1454709</li>
+            <li>https://www.visme.co/</li>
         </ul>
     </section>
 
